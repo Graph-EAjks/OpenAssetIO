@@ -45,7 +45,7 @@ jobs:
         shell: ${{ matrix.config.shell }}
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Bootstrap
         uses: ./.github/bootstrap_platform

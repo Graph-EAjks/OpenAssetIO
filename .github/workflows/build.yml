@@ -41,7 +41,7 @@ jobs:
         shell: ${{ matrix.config.shell }}
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
 
     - name: Bootstrap
       uses: ./.github/bootstrap_platform
@@ -82,7 +82,7 @@ jobs:
 
     steps:
     - name: Checkout source
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Test
       run: |
@@ -110,7 +110,7 @@ jobs:
 
     steps:
     - name: Checkout source
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
       # Check that the acronym version of OpenAssetIO isn't in use in
       # the code base, see:
